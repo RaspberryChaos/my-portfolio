@@ -1,0 +1,26 @@
+.nav {
+    height: 8vh;
+    padding: 1rem;
+    background: rgb(54, 59, 66);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style: none;
+  }
+  
+  .nav ul li a {
+    margin: 1rem;
+    color: #FBD784;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+
+  .nav ul li a:hover {
+      border-bottom: 1px solid #FBD784;
+  }
