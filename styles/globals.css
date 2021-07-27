@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,5 +11,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    border: 1px solid green;
+    border: 2px solid green;
+}
+
+
+/*Extra Small, Mobile*/
+@media (min-width: 500px) {
+
+}
+
+/* Small Devices, Tablets */
+@media (min-width: 768px) {
+ 
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width: 1200px) {
+
 }
