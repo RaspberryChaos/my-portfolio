@@ -1,13 +1,42 @@
-import React from 'react'
+import React from "react";
+import styles from '../styles/About.module.css';
 
 const about = () => {
-    return (
-        <div className="container">
-            <h1>About Me</h1>
-            <p>Hi, I'm Ailie. I'm a web developer based in Paris, France. I recently graduated from Ironhack's intensive web development bootcamp and I am currently looking for a new challenge.</p>
-            <p>Languages: English, French, Italian</p>
-        </div>
-    )
-}
+  return (
+    <div className="container">
+      <h1 className="pageTitle">About Me</h1>
+      <div className={styles.bio}>
+      <h2 className={styles.subtitle}>
+        AILIE MCCORKINDALE, Full Stack Developer - Javascript(ES6), HTML & CSS. MERN Stack (MongoDB,
+        Express, React, Node-js).
+      </h2>
+      <p>
+        Hi, I'm Ailie. I'm a web developer based in Paris, France and I am
+        currently looking for a new challenge!
+      </p>
+      <p>
+        Fresh from taking time out to backpack in South East Asia and sharpening
+        my tech skills with Ironhack's intensive web development bootcamp, I'm
+        ready to kick start my career as a full stack developer! A lover of
+        puzzles, I’m not afraid to think outside the box, try new things and use
+        my creativity and enthusiasm to solve problems.
+      </p>
+      <p>
+        I love to learn new things and expand my horizons. Although my
+        professional path has taken a few twists and turns, I’ve never stopped
+        learning whether it was through university, evening classes or online
+        tutorials, and I’ve finally found my passion in the ever changing world
+        of web development, where it is essential to keep up with all the latest
+        developments.
+      </p>
+      <p>In my spare time I enjoy travelling, reading, yoga and making games with HTML canvas.</p>
+      <h3>Technologies</h3>
+      <p>HTML 5 | CSS3 | JavaScript | TypeScript | React | Bootstrap | MaterialUI | Node.js | Express | Handlebars | Jasmine | MongoDB | Mongoose | Git | GitHub</p>
+      <h3>Languages</h3>
+      <p>English, French, Italian</p>
+      </div>
+    </div>
+  );
+};
 
-export default about
+export default about;

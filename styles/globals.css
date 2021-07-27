@@ -4,15 +4,23 @@
     box-sizing: border-box;
     color: #FBD784;
     font-family: 'Alice', serif;
+    font-size: 1.2rem;
 }
 
 .container {
     background-color: rgb(54, 59, 66);
-    height: calc(100vh - 10vh); /*minus navbar*/
+    min-height: calc(100vh - 10vh); /*minus navbar*/
 }
 
 a {
     text-decoration: none;
+}
+
+.pageTitle {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 5vh;
 }
 
 
@@ -24,13 +32,15 @@ a {
 /* Small Devices, Tablets */
 @media (min-width: 768px) {
     .container {
-        height: calc(100vh - 14vh); /*minus navbar*/
+        min-height: calc(100vh - 14vh); /*minus navbar*/
     }
 }
 
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
-
+    .pageTitle {
+        font-size: 3.5rem;
+    }
 }
 
 /* Large Devices, Wide Screens */

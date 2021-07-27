@@ -48,12 +48,14 @@ const handleClick = (e, link) => {
         <div className={styles.socMedia}>
         <li>
           <a href="https://www.linkedin.com/in/ailie-mccorkindale/" target="_blank" onClick={(e) => handleClick(e, true)}>
-            <Image src={logoLI} alt="LinkedIn logo" className={styles.logo} width={10} height={10} />
+            <Image src={logoLI} alt="LinkedIn logo" className={styles.logo} width={12} height={12} />
+            <span className={styles.social}>LinkedIn</span>
           </a>
         </li>
         <li>
           <a href="https://github.com/RaspberryChaos" target="_blank" onClick={(e) => handleClick(e, true)}>
-            <Image src={logoGH} alt="GitHub logo" className={styles.logo} width={10} height={10}  />
+            <Image src={logoGH} alt="GitHub logo" className={styles.logo} width={12} height={12}  />
+          <span className={styles.social}>GitHub</span>
           </a>
         </li>
         </div>

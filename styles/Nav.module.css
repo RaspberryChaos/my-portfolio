@@ -18,6 +18,10 @@
     margin: 1rem;
   }
 
+  .social {
+    font-size: 1.8rem;
+  }
+
 .navItem a:hover {
       border-bottom: 1px solid #FBD784;
   } 
@@ -78,6 +82,7 @@
 
 .socMedia {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -103,6 +108,10 @@
         top: 0;
         padding-bottom: 0;
     }
+
+    .socMedia {
+      flex-direction: row;
+    }
     
     .navMenu li {
       margin: 0;
@@ -111,5 +120,9 @@
     .hamburger, .active  {
         display: none;
       }
+
+    .social {
+      display: none;
+    }
  
 }
