@@ -11,18 +11,14 @@
     list-style: none;
 }
   
-.nav ul li {
+.navItem {
     color: #FBD784;
     font-size: 1.8rem;
     padding: 1rem;
     margin: 1rem;
   }
 
-.nav ul li a {
-    text-decoration: none;
-}
-
-.nav ul li a:hover {
+.navItem a:hover {
       border-bottom: 1px solid #FBD784;
   } 
   
@@ -71,6 +67,24 @@
     transform: translateY(-16px) rotate(-45deg);
   }
 
+.logo {
+  background-color: #fff;
+  margin: 1rem;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.socMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.socMedia * {
+  margin: 1rem;
+}
 
 /* Small Devices, Tablets */
 @media (min-width: 768px) {

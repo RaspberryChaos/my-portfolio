@@ -6,6 +6,15 @@
     font-family: 'Alice', serif;
 }
 
+.container {
+    background-color: rgb(54, 59, 66);
+    height: calc(100vh - 10vh); /*minus navbar*/
+}
+
+a {
+    text-decoration: none;
+}
+
 
 /*Extra Small, Mobile*/
 @media (min-width: 500px) {
@@ -14,7 +23,9 @@
 
 /* Small Devices, Tablets */
 @media (min-width: 768px) {
-    
+    .container {
+        height: calc(100vh - 14vh); /*minus navbar*/
+    }
 }
 
 /* Medium Devices, Desktops */

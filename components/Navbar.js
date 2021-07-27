@@ -1,6 +1,10 @@
 import React, { useState} from "react";
 import Link from "next/link";
 import styles from "../styles/Nav.module.css";
+import Image from "next/Image";
+import logoLI from '../public/linkedin.png';
+import logoGH from '../public/github.png';
+
 
 const Navbar = () => {
 
@@ -21,26 +25,38 @@ const handleClick = (e, link) => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navMenu} style={{right: (menuOpen ? "0" : "-100%")}}>
-        <li>
-          <Link href="/" className="navItem">
+        <li className={styles.navItem}>
+          <Link href="/">
           <a onClick={(e) => handleClick(e, true)}>Home</a>
           </Link>
         </li>
-        <li>
-          <Link href="/about" className="navItem">
+        <li className={styles.navItem}>
+          <Link href="/about">
             <a onClick={(e) => handleClick(e, true)}>About</a>
           </Link>
         </li>
-        <li>
-          <Link href="/projects" className="navItem">
+        <li className={styles.navItem}>
+          <Link href="/projects">
           <a onClick={(e) => handleClick(e, true)}>Projects</a>
           </Link>
         </li>
-        <li>
-          <Link href="/contact" className="navItem">
+        <li className={styles.navItem}>
+          <Link href="mailto:ailie.mccorkindale@gmail.com">
           <a onClick={(e) => handleClick(e, true)}>Contact</a>
           </Link>
         </li>
+        <div className={styles.socMedia}>
+        <li>
+          <a href="https://www.linkedin.com/in/ailie-mccorkindale/" target="_blank" onClick={(e) => handleClick(e, true)}>
+            <Image src={logoLI} alt="LinkedIn logo" className={styles.logo} width={10} height={10} />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/RaspberryChaos" target="_blank" onClick={(e) => handleClick(e, true)}>
+            <Image src={logoGH} alt="GitHub logo" className={styles.logo} width={10} height={10}  />
+          </a>
+        </li>
+        </div>
       </ul>
       <div className={menuOpen ? styles.active : styles.hamburger}  onClick={(e) => handleClick(e, false)}>
         <span className={styles.bar}></span>
