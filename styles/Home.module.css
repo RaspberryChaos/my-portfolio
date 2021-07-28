@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 10vh); /*minus navbar*/
+    color: #FBD784;
 }
 
 .main {

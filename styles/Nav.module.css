@@ -12,14 +12,19 @@
 }
   
 .navItem {
-    color: #FBD784;
     font-size: 1.8rem;
     padding: 1rem;
     margin: 1rem;
   }
 
+  .navItem a {
+    color: #FBD784;
+    font-size: 1.8rem;
+  }
+
   .social {
     font-size: 1.8rem;
+    color: #FBD784;
   }
 
 .navItem a:hover {

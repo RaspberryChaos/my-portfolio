@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #FBD784;
     font-family: 'Alice', serif;
     font-size: 1.2rem;
 }
@@ -21,6 +20,7 @@ a {
     font-size: 2.5rem;
     text-align: center;
     padding-top: 5vh;
+    color: #FBD784;
 }
 
 
