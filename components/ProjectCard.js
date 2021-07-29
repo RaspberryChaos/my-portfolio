@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
       <h2 className={styles.cardTitle}>{props.project.title}</h2>
       <h3>{props.project.category}</h3>
       {props.project.img && <img src={props.project.img} style={imgSize} alt="screenshot" />}
-    <div>
+    <div className={styles.buttons}>
       <a href={props.project.url} target="_blank">
         Visit Site
       </a>

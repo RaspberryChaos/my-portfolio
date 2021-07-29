@@ -1,83 +1,85 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bio {
-    padding: 1rem;
-    color: #FBD784;
+  padding: 1rem;
+  color: #fbd784;
 }
 
 .bio * {
-    padding: 1rem;
-    text-align: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .subtitle {
-    color: #FD8B7C;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+  color: #fd8b7c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
 }
 
-.profileImage, .profileImageExtra {
-    width: 80%;
-    margin: 1rem;
+.profileImage,
+.profileImageExtra {
+  width: 80%;
+  margin: 1rem;
 }
 
 .profileImageExtra {
-    display: none;
+  display: none;
 }
 
 .images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
+/*MEDIA QUERIES*/
 
 /*Extra Small, Mobile*/
 @media (min-width: 500px) {
-    .profileImage, .profileImageExtra {
-        width: 70%;
-        margin: 1rem;
-    }
-}
-
-/* Small Devices, Tablets */
-@media (min-width: 768px) {
-
+  .profileImage,
+  .profileImageExtra {
+    width: 70%;
+    margin: 1rem;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
-    .bio * {
-        text-align: left;
-    }
-    .main {
-        display: grid;
-        grid-template-columns: 1.8fr 1fr;
-        align-items: flex-start;
-        justify-content: center;
-        margin: 1rem;
-    }
-    .profileImage, .profileImageExtra {
-        width: 90%;
-        margin: 2rem 0.5rem;
-    }
-    .profileImageExtra {
-        display: flex;
-    }
-    .images {
-        order: 2;
-    }
+  .bio * {
+    text-align: left;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .profileImage,
+  .profileImageExtra {
+    width: 90%;
+    margin: 2rem 0.5rem;
+  }
+  .profileImageExtra {
+    display: flex;
+  }
+  .images {
+    order: 2;
+  }
 }
 
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
-    .main {
-        grid-template-columns: 1.7fr 1fr;
-    }
-    .profileImage, .profileImageExtra {
-        width: 70%;
-        margin: 1rem;
-    }
+  .main {
+    grid-template-columns: 1.7fr 1fr;
+  }
+  .profileImage,
+  .profileImageExtra {
+    width: 70%;
+    margin: 1rem;
+  }
 }

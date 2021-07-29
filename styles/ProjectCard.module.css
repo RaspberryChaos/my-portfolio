@@ -1,55 +1,83 @@
 .card {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  color: rgb(54, 59, 66);
+  text-align: center;
+  background-color: #d3fbd8;
+}
+
+.card * {
+  padding: 1rem;
+}
+
+.card:nth-of-type(4n+2) {
+  background-color: #daadc3;
+}
+
+.card:nth-of-type(4n+3) {
+  background-color: #d8f3ff;
+}
+
+.card:nth-of-type(4n+4) {
+  background-color: #c4cad3;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+}
+
+.card a {
+  color: rgb(54, 59, 66);
+  border: 1px solid rgb(54, 59, 66);
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.card a:hover {
+  background-color: rgb(54, 59, 66);
+  color: #d3fbd8;
+}
+
+.card:nth-of-type(2n) a:hover {
+  color: #daadc3;
+}
+
+.card:nth-of-type(3n) a:hover {
+  color: #d8f3ff;
+}
+
+.card:nth-of-type(4n) a:hover {
+  color: #c4cad3;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/*MEDIA QUERIES*/
+
+/*Extra Small, Mobile*/
+@media (min-width: 500px) {
+  .buttons {
+    flex-direction: row;
+  }
+}
+
+/* Small Devices, Tablets */
+@media (min-width: 768px) {
+  .buttons {
     flex-direction: column;
-    align-items:center;
-    border-radius: 1rem;
-    margin: 1rem 0;
-    color: rgb(54, 59, 66);
-    text-align: center;
-    background-color: #D3FBD8;
- }
+  }
+}
 
- .card * {
-     padding: 1rem;
- }
-
- .card:nth-of-type(2n) {
-    background-color: #DAADC3;
- }
-
- .card:nth-of-type(3n) {
-    background-color: #D8F3FF;
- }
-
- .card:nth-of-type(4n) {
-    background-color: #C4CAD3;
- }
-
- .cardTitle {
-     font-size: 1.8rem;
- }
-
- .card a {
-    color: rgb(54, 59, 66);
-    border: 1px solid rgb(54, 59, 66);
-    margin: 0 1rem;
-    border-radius: 0.5rem;
- }
-
- .card a:hover {
-     background-color: rgb(54, 59, 66);
-     color: #D3FBD8;
- }
-
- .card:nth-of-type(2n) a:hover {
-    color: #DAADC3;
- }
-
- .card:nth-of-type(3n) a:hover {
-    color: #D8F3FF;
- }
-
- .card:nth-of-type(4n) a:hover {
-    color: #C4CAD3;
- }
+/* Large Devices, Wide Screens */
+@media (min-width: 1200px) {
+  .buttons {
+    flex-direction: row;
+  }
+}
