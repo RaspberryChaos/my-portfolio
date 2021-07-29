@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
       key={`project_${props.project.id}`}
       className={styles.card}
     >
-      <h2>{props.project.title}</h2>
+      <h2 className={styles.cardTitle}>{props.project.title}</h2>
       <h3>{props.project.category}</h3>
       {props.project.img && <img src={props.project.img} style={imgSize} alt="screenshot" />}
     <div>

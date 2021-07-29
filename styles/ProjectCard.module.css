@@ -5,11 +5,51 @@
     align-items:center;
     border-radius: 1rem;
     margin: 1rem 0;
-    background-color: lightblue;
     color: rgb(54, 59, 66);
     text-align: center;
+    background-color: #D3FBD8;
  }
 
  .card * {
      padding: 1rem;
+ }
+
+ .card:nth-of-type(2n) {
+    background-color: #DAADC3;
+ }
+
+ .card:nth-of-type(3n) {
+    background-color: #D8F3FF;
+ }
+
+ .card:nth-of-type(4n) {
+    background-color: #C4CAD3;
+ }
+
+ .cardTitle {
+     font-size: 1.8rem;
+ }
+
+ .card a {
+    color: rgb(54, 59, 66);
+    border: 1px solid rgb(54, 59, 66);
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+ }
+
+ .card a:hover {
+     background-color: rgb(54, 59, 66);
+     color: #D3FBD8;
+ }
+
+ .card:nth-of-type(2n) a:hover {
+    color: #DAADC3;
+ }
+
+ .card:nth-of-type(3n) a:hover {
+    color: #D8F3FF;
+ }
+
+ .card:nth-of-type(4n) a:hover {
+    color: #C4CAD3;
  }

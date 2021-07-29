@@ -45,7 +45,7 @@ const handleClick = (e, link) => {
           <a onClick={(e) => handleClick(e, true)}>Contact</a>
           </Link>
         </li>
-        <div className={styles.socMedia}>
+        {/* <div className={styles.socMedia}>
         <li>
           <a href="https://www.linkedin.com/in/ailie-mccorkindale/" target="_blank" onClick={(e) => handleClick(e, true)}>
             <Image src={logoLI} alt="LinkedIn logo" className={styles.logo} width={12} height={12} />
@@ -58,7 +58,7 @@ const handleClick = (e, link) => {
           <span className={styles.social}>GitHub</span>
           </a>
         </li>
-        </div>
+        </div> */}
       </ul>
       <div className={menuOpen ? styles.active : styles.hamburger}  onClick={(e) => handleClick(e, false)}>
         <span className={styles.bar}></span>

@@ -40,8 +40,17 @@ const myProjects = [
         img: "https://res.cloudinary.com/dih7zrall/image/upload/v1627420748/Portfolio/siteVP1_ud2td8.jpg"
     },
     {
-        title: "Bubble Pop",
+        title: "Flappy Bird",
         id: 5,
+        url: "https://flappybird-ailie.netlify.app/" ,
+        gitHub: "https://github.com/RaspberryChaos/flappy-bird",
+        category: "HTML Canvas Game",
+        tags: ["HTML", "CSS", "JavaScript"],
+        img: "https://res.cloudinary.com/dih7zrall/image/upload/v1627435501/Portfolio/flappybird1_cxgz4v.jpg"
+    },
+    {
+        title: "Bubble Pop",
+        id: 6,
         url: "https://bubblepop-ailie.netlify.app/" ,
         gitHub: "https://github.com/RaspberryChaos/bubblePop",
         category: "HTML Canvas Game",

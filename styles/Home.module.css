@@ -49,6 +49,7 @@
 .btn {
     padding:1rem;
     border: 1px solid #FBD784;
+    color: #FBD784;
     background-color: Transparent;
     text-transform: uppercase;
     font-size: 1.2rem;
