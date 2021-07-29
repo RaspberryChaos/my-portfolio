@@ -1,10 +1,18 @@
 import React from "react";
 import styles from '../styles/About.module.css';
 
+
 const about = () => {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1 className="pageTitle">About Me</h1>
+      
+      <div className={styles.main}>
+      <div className={styles.images}>
+      <img className={styles.profileImage} src="https://res.cloudinary.com/dih7zrall/image/upload/v1627524874/Portfolio/geneva_e7afjr.jpg" />
+      <img className={styles.profileImageExtra} src="https://res.cloudinary.com/dih7zrall/image/upload/v1627523875/Portfolio/laos_dlqego.jpg" />
+      <img className={styles.profileImageExtra} src="https://res.cloudinary.com/dih7zrall/image/upload/v1627526801/Portfolio/elephant_vhe6z8.jpg" />
+      </div>
       <div className={styles.bio}>
       <h2 className={styles.subtitle}>
         AILIE MCCORKINDALE, Full Stack Developer - Javascript(ES6), HTML & CSS. MERN Stack (MongoDB,
@@ -34,6 +42,7 @@ const about = () => {
       <p>HTML 5 | CSS3 | JavaScript | TypeScript | React | Bootstrap | MaterialUI | Node.js | Express | Handlebars | Jasmine | MongoDB | Mongoose | Git | GitHub</p>
       <h3>Languages</h3>
       <p>English, French, Italian</p>
+      </div>
       </div>
     </div>
   );
