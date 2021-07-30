@@ -7,27 +7,10 @@
   margin: 1rem 0;
   color: rgb(54, 59, 66);
   text-align: center;
-  background-color: #d3fbd8;
 }
 
 .card * {
   padding: 1rem;
-}
-
-.card:nth-of-type(4n+2) {
-  background-color: #daadc3;
-}
-
-.card:nth-of-type(4n+3) {
-  background-color: #d8f3ff;
-}
-
-.card:nth-of-type(4n+4) {
-  background-color: #c4cad3;
-}
-
-.cardTitle {
-  font-size: 1.8rem;
 }
 
 .card a {
@@ -39,24 +22,58 @@
 
 .card a:hover {
   background-color: rgb(54, 59, 66);
+}
+
+/*Card Colour 1*/
+.card:nth-of-type(4n + 1) {
+  background-color: #c4cad3;
+}
+
+.card:nth-of-type(4n + 1) a:hover {
+  color: #c4cad3;
+}
+
+/*Card Color 2*/
+.card:nth-of-type(4n + 2) {
+  background-color: #d3fbd8;
+}
+.card:nth-of-type(4n + 2) a:hover {
   color: #d3fbd8;
 }
 
-.card:nth-of-type(2n) a:hover {
-  color: #daadc3;
+/*Card Colour 3*/
+
+.card:nth-of-type(4n + 3) {
+  background-color: #c4cad3;
 }
 
-.card:nth-of-type(3n) a:hover {
+.card:nth-of-type(4n + 3) a:hover {
+  color: #c4cad3;
+}
+
+/*Card Colour 4*/
+
+.card:nth-of-type(4n + 4) {
+  background-color: #d8f3ff;
+}
+.card:nth-of-type(4n + 4) a:hover {
   color: #d8f3ff;
 }
 
-.card:nth-of-type(4n) a:hover {
-  color: #c4cad3;
+
+.cardTitle {
+  font-size: 1.8rem;
 }
+
 
 .buttons {
   display: flex;
   flex-direction: column;
+}
+
+.imageContainer {
+  width: 90vw;
+  padding: 0;
 }
 
 /*MEDIA QUERIES*/
@@ -72,6 +89,16 @@
 @media (min-width: 768px) {
   .buttons {
     flex-direction: column;
+  }
+  .imageContainer {
+    width: 40vw;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 992px) {
+  .imageContainer {
+    width: 25vw;
   }
 }
 
