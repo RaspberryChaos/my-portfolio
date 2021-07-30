@@ -2,11 +2,6 @@ import React from "react";
 import styles from "../styles/ProjectCard.module.css";
 import Image from "next/image";
 
-const imgSize = {
-  width: "100%",
-  objectFit: "cover",
-};
-
 const ProjectCard = (props) => {
   console.log("props", props);
   return (

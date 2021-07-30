@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import Link from "next/link";
 import styles from "../styles/Nav.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 import logoLI from '../public/linkedin.png';
 import logoGH from '../public/github.png';
 
@@ -45,20 +45,6 @@ const handleClick = (e, link) => {
           <a onClick={(e) => handleClick(e, true)}>Contact</a>
           </Link>
         </li>
-        {/* <div className={styles.socMedia}>
-        <li>
-          <a href="https://www.linkedin.com/in/ailie-mccorkindale/" target="_blank" onClick={(e) => handleClick(e, true)}>
-            <Image src={logoLI} alt="LinkedIn logo" className={styles.logo} width={12} height={12} />
-            <span className={styles.social}>LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/RaspberryChaos" target="_blank" onClick={(e) => handleClick(e, true)}>
-            <Image src={logoGH} alt="GitHub logo" className={styles.logo} width={12} height={12}  />
-          <span className={styles.social}>GitHub</span>
-          </a>
-        </li>
-        </div> */}
       </ul>
       <div className={menuOpen ? styles.active : styles.hamburger}  onClick={(e) => handleClick(e, false)}>
         <span className={styles.bar}></span>
