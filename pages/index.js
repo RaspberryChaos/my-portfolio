@@ -10,7 +10,7 @@ export default function Home() {
       <p className={styles.portfolio}><span className={styles.rectangle}></span>PORTFOLIO</p>
       <h1 className={styles.title}>Ailie McCorkindale</h1>
       <h2 className={styles.subtitle}>Web Developer</h2>
-        <Link href="/projects">
+        <Link href="/projects" passHref>
         <button className={styles.btn}>My Projects</button>
         </Link>
       </main>
