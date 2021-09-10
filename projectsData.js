@@ -52,5 +52,14 @@ export const myProjects = [
        category: "HTML Canvas Game",
        tags: ["HTML", "CSS", "JavaScript"],
        img: "/bubblePop1.jpg"
-   }
+   },
+   {
+    title: "Trivia Game",
+    id: 7,
+    url: "https://trivia-app-ailie.vercel.app/" ,
+    gitHub: "https://github.com/RaspberryChaos/trivia-app",
+    category: "React Game",
+    tags: ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Next.js"],
+    img: "/trivia.jpg"
+}
 ];
