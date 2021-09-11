@@ -1,6 +1,6 @@
 .nav {
   height: 10vh;
-  background: rgb(54, 59, 66);
+  background: var(--clr-background);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -18,17 +18,17 @@
 }
 
 .navItem a {
-  color: #fbd784;
+  color: var(--clr-yellow);
   font-size: 1.8rem;
 }
 
 .social {
   font-size: 1.8rem;
-  color: #fbd784;
+  color: var(--clr-yellow);
 }
 
 .navItem a:hover {
-  border-bottom: 1px solid #fbd784;
+  border-bottom: 1px solid var(--clr-yellow);
 }
 
 .navMenu {
@@ -36,7 +36,7 @@
   right: 0;
   top: 10vh;
   flex-direction: column;
-  background-color: rgb(54, 59, 66);
+  background-color: var(--clr-background);
   width: 100%;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -60,7 +60,7 @@
   margin: 10px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fbd784;
+  background-color: var(--clr-yellow);
 }
 
 .active .bar:nth-child(2) {

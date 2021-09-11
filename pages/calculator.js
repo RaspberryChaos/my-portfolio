@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import styles from "../styles/Calculator.module.css";
 
 
 const calculator = () => {
@@ -34,37 +35,38 @@ const calculator = () => {
 
     return (
         <div>
-            <h1>Calculator</h1>
-            <div className="wrapper">
-                <div className="screen"></div>
+            <h1 className="pageTitle">Calculator</h1>
+            <div className={styles.calculatorContainer}>
+            <div className={styles.screen}></div>
+            <div className={styles.wrapper}>
             {/* Row 1 */}
-                <div className="lightBtn" onClick={reset}>AC</div>
-                <div className="lightBtn" onClick={percentage}>%</div>
-                <div className="lightBtn" onClick={positiveNegative}>+/-</div>
-                <div className="operator" onClick={operator}>/</div>
+                <div className={styles.lightButton} onClick={reset}>AC</div>
+                <div className={styles.lightButton} onClick={percentage}>%</div>
+                <div className={styles.lightButton} onClick={positiveNegative}>+/-</div>
+                <div className={styles.operator} onClick={operator}>/</div>
             {/* Row 2 */}
-                <div className="darkBtn" onClick={inputNumber}>7</div>
-                <div className="darkBtn" onClick={inputNumber}>8</div>
-                <div className="darkBtn" onClick={inputNumber}>9</div>
-                <div className="operator" onClick={operator}>*</div>
+                <div className={styles.darkButton} onClick={inputNumber}>7</div>
+                <div className={styles.darkButton} onClick={inputNumber}>8</div>
+                <div className={styles.darkButton} onClick={inputNumber}>9</div>
+                <div className={styles.operator} onClick={operator}>*</div>
             {/* Row 3 */}
-                <div className="darkBtn" onClick={inputNumber}>4</div>
-                <div className="darkBtn" onClick={inputNumber}>5</div>
-                <div className="darkBtn" onClick={inputNumber}>6</div>
-                <div className="operator" onClick={operator}>+</div>
+                <div className={styles.darkButton} onClick={inputNumber}>4</div>
+                <div className={styles.darkButton} onClick={inputNumber}>5</div>
+                <div className={styles.darkButton} onClick={inputNumber}>6</div>
+                <div className={styles.operator} onClick={operator}>+</div>
             {/* Row 4 */}
-                <div className="darkBtn" onClick={inputNumber}>1</div>
-                <div className="darkBtn" onClick={inputNumber}>2</div>
-                <div className="darkBtn" onClick={inputNumber}>3</div>
-                <div className="operator" onClick={operator}>-</div>
+                <div className={styles.darkButton} onClick={inputNumber}>1</div>
+                <div className={styles.darkButton} onClick={inputNumber}>2</div>
+                <div className={styles.darkButton} onClick={inputNumber}>3</div>
+                <div className={styles.operator} onClick={operator}>-</div>
             {/* Row 5 */}
-                <div className="darkBtn" onClick={inputNumber}>0</div>
-                <div className="darkBtn" onClick={inputNumber}>.</div>
-                <div className="darkBtn" onClick={deleteInput}>C</div>
-                <div className="operator" onClick={equals}>=</div>
+                <div className={styles.darkButton} onClick={inputNumber}>0</div>
+                <div className={styles.darkButton} onClick={inputNumber}>.</div>
+                <div className={styles.lightButton} onClick={deleteInput}>C</div>
+                <div className={styles.operator} onClick={equals}>=</div>
                 
             </div>
-
+            </div>
         </div>
     )
 }

@@ -8,8 +8,13 @@
   font-size: 1.2rem;
 }
 
+:root {
+  --clr-yellow: #fbd784;
+  --clr-background: rgb(54, 59, 66);
+}
+
 body {
-  background-color: rgb(54, 59, 66);
+  background-color: var(--clr-background);
 }
 
 a {
@@ -21,7 +26,7 @@ a {
   font-size: 2.5rem;
   text-align: center;
   padding-top: 5vh;
-  color: #fbd784;
+  color: var(--clr-yellow);
 }
 
 /*Extra Small, Mobile*/

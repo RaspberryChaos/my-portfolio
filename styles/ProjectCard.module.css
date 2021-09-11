@@ -5,7 +5,7 @@
   align-items: center;
   border-radius: 1rem;
   margin: 1rem 0;
-  color: rgb(54, 59, 66);
+  color: var(--clr-background);
   text-align: center;
 }
 
@@ -14,14 +14,14 @@
 }
 
 .card a {
-  color: rgb(54, 59, 66);
-  border: 1px solid rgb(54, 59, 66);
+  color: var(--clr-background);
+  border: 1px solid var(--clr-background);
   margin: 0.5rem;
   border-radius: 0.5rem;
 }
 
 .card a:hover {
-  background-color: rgb(54, 59, 66);
+  background-color: var(--clr-background);
 }
 
 /*Card Colour 1*/

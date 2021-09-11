@@ -6,7 +6,7 @@
 
 .bio {
   padding: 1rem;
-  color: #fbd784;
+  color: var(--clr-yellow);
 }
 
 .bio * {
