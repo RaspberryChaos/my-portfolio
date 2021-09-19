@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.heading {
+    color: var(--clr-yellow);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.equals {
+    font-weight: bold;
+    font-size: 4rem;
+    color: var(--clr-yellow);
+}
