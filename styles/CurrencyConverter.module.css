@@ -17,3 +17,9 @@
     font-size: 4rem;
     color: var(--clr-yellow);
 }
+
+.rate {
+    color: var(--clr-yellow);
+    font-size: 1rem;
+    padding: 1rem;
+}

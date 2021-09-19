@@ -15,11 +15,11 @@ const selectStyle = {
 }
 
 const CurrencyRow = (props) => {
-    const { currencyList } = props;
+    const { currencyList, selected, onChangeCurrency, amount, onChangeAmount } = props;
     return (
         <div>
-            <input type="number" style={inputStyle}/>
-            <select style={selectStyle}>
+            <input type="number" style={inputStyle} value={amount} onChange={onChangeAmount}/>
+            <select value={selected} style={selectStyle} onChange={onChangeCurrency}>
                 {currencyList && currencyList.map((currency,i) => (
                     <option key={i} value={currency}>{currency}</option>
                 ))}
