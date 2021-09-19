@@ -5,47 +5,48 @@ import { fetchData } from "../api/currencyConverterAPI";
 
 const CurrencyConverter = (props) => {
   const [currencies, setCurrencies] = useState([]);
-  const [fromCurrency, setFromCurrency] = useState("");
-  const [toCurrency, setToCurrency] = useState("");
+  const [fromCurrency, setFromCurrency] = useState("EUR");
+  const [toCurrency, setToCurrency] = useState("GBP");
   const [amount, setAmount] = useState(1);
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
   const [exchangeRate, setExchangeRate] = useState(null);
 
-  let toAmount, fromAmount;
-  if (amountInFromCurrency) {
-    fromAmount = amount;
-    toAmount = amount * exchangeRate;
-  } else {
-    toAmount = amount;
-    fromAmount = amount / exchangeRate;
+  let toAmount = 0;
+  let fromAmount = 0;
+
+  if (amount) {
+    if (amountInFromCurrency) {
+      fromAmount = amount;
+      toAmount = amount * exchangeRate;
+    } else {
+      toAmount = amount;
+      fromAmount = amount / exchangeRate;
+    }
   }
 
+  //Use Data from API call to populate list of currencies, and set initial values for currencies and exchange rate
   useEffect(() => {
-    console.log(props.data);
     const currencyList = [props.data.base, ...Object.keys(props.data.rates)];
     setCurrencies(currencyList);
     setFromCurrency(props.data.base);
     setToCurrency(currencyList[50]);
-    
-
     setExchangeRate(props.data.rates[currencyList[50]]);
   }, []);
 
+  //Update the exchange rate if one of the currencies is changed
   useEffect(() => {
-    console.log("to", toCurrency, "from", fromCurrency)
-    console.log(props.data.rates[toCurrency])
     setExchangeRate(props.data.rates[toCurrency]);
-  }, [fromCurrency, toCurrency])
+  }, [fromCurrency, toCurrency]);
 
   const handleFromAmountChange = (e) => {
     setAmount(e.target.value);
     setAmountInFromCurrency(true);
-  }
+  };
 
   const handleToAmountChange = (e) => {
     setAmount(e.target.value);
     setAmountInFromCurrency(false);
-  }
+  };
 
   return (
     <div>
@@ -53,7 +54,8 @@ const CurrencyConverter = (props) => {
       <div className={styles.container}>
         <h2 className={styles.heading}>Convert</h2>
         <CurrencyRow
-          currencyList={currencies}
+          //   currencyList={currencies} Deactivated because API free plan doesn't allow you to change the base currency
+          currencyList={["EUR"]}
           selected={fromCurrency}
           onChangeCurrency={(e) => setFromCurrency(e.target.value)}
           amount={fromAmount}
@@ -67,8 +69,10 @@ const CurrencyConverter = (props) => {
           amount={toAmount}
           onChangeAmount={handleToAmountChange}
         />
-       
-        <h3 className={styles.rate}>{`Current Exchange Rate: 1 ${fromCurrency} = ${exchangeRate} ${toCurrency}`}</h3>
+
+        <h3
+          className={styles.rate}
+        >{`Current Exchange Rate: 1 ${fromCurrency} = ${exchangeRate} ${toCurrency}`}</h3>
       </div>
     </div>
   );
