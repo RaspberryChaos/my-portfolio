@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import styles from "../../styles/Calculator.module.css";
 
 
-const calculator = () => {
+const Calculator = () => {
 
     const [prevNumber, setPrevNumber] = useState("");
     const [currentNumber, setCurrentNumber] = useState("");
@@ -52,7 +52,7 @@ const calculator = () => {
     }
 
     const equals = (e) => {
-        
+        if(total) return;
         if(e?.target.innerText === "=") {
             setTotal(true);
         }
@@ -141,5 +141,5 @@ const calculator = () => {
     )
 }
 
-export default calculator
+export default Calculator;
 
