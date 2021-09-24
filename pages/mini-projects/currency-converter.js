@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CurrencyRow from "../../components/mini-projects/CurrencyRow";
 import styles from "../../styles/CurrencyConverter.module.css";
-import { fetchData } from "../api/currencyConverterAPI";
 
 const CurrencyConverter = (props) => {
   const [currencies, setCurrencies] = useState([]);
@@ -88,7 +87,8 @@ export default CurrencyConverter;
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const data = await fetchData();
+  const res = await fetch("http://api.exchangeratesapi.io/v1/latest?access_key=" + process.env.API_KEY); 
+  const data = await res.json();
 
   if (!data) {
     return {

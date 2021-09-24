@@ -3,7 +3,7 @@ export const myProjects = [
     title: "Bien naître et Bien être",
     id: 1,
     url: "https://site-virginie-perrault-v2.vercel.app/",
-    gitHub: "https://github.com/RaspberryChaos/site-virginie-perrault",
+    gitHub: "https://github.com/RaspberryChaos/next-site-virginie-perrault/blob/main/README.md",
     category: "Client project",
     tags: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
     img: "/siteVP1.jpg",
