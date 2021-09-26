@@ -3,7 +3,7 @@ import styles from "../styles/ProjectCard.module.css";
 import Image from "next/image";
 
 const ProjectCard = (props) => {
-  console.log("props", props);
+  //console.log("props", props);
   return (
     <div key={`project_${props.project.id}`} className={styles.card}>
       <h2 className={styles.cardTitle}>{props.project.title}</h2>
