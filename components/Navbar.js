@@ -8,9 +8,10 @@ import styles from "../styles/Nav.module.css";
 const Navbar = () => {
 
 const [menuOpen, setMenuOpen] = useState(false);
+const [screenSize, setScreenSize] = useState("desktop");
 
 const onScroll = (e) => {
-  if(menuOpen === true) {
+  if(menuOpen === true && screenSize === "mobile") {
     window.scrollTo(0,0);
   }
 };
@@ -20,8 +21,13 @@ useEffect(() => {
   return () => window.removeEventListener("scroll", onScroll);
 }, [menuOpen]);
 
-const handleClick = (e) => {  
+const handleClick = (e, type) => {  
         setMenuOpen(prev => !prev);
+        if(type === "menu" && screenSize === "desktop") {
+          setScreenSize("mobile");
+        } else {
+          setScreenSize("desktop");
+        }
 }
 
   return (
@@ -29,26 +35,26 @@ const handleClick = (e) => {
       <ul className={styles.navMenu} style={{right: (menuOpen ? "0" : "-100%")}}>
         <li className={styles.navItem}>
           <Link href="/">
-          <a onClick={(e) => handleClick(e)}>Home</a>
+          <a onClick={(e) => handleClick(e, "link")}>Home</a>
           </Link>
         </li>
         <li className={styles.navItem}>
           <Link href="/about">
-            <a onClick={(e) => handleClick(e)}>About</a>
+            <a onClick={(e) => handleClick(e, "link")}>About</a>
           </Link>
         </li>
         <li className={styles.navItem}>
           <Link href="/projects">
-          <a onClick={(e) => handleClick(e)}>Projects</a>
+          <a onClick={(e) => handleClick(e, "link")}>Projects</a>
           </Link>
         </li>
         <li className={styles.navItem}>
           <Link href="mailto:ailie.mccorkindale@gmail.com">
-          <a onClick={(e) => handleClick(e)}>Contact</a>
+          <a onClick={(e) => handleClick(e, "link")}>Contact</a>
           </Link>
         </li>
       </ul>
-      <div className={menuOpen ? styles.active : styles.hamburger}  onClick={(e) => handleClick(e)}>
+      <div className={menuOpen ? styles.active : styles.hamburger}  onClick={(e) => handleClick(e, "menu")}>
         <span className={styles.bar}></span>
         <span className={styles.bar}></span>
         <span className={styles.bar}></span>
