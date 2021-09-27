@@ -49,7 +49,7 @@ const handleClick = (e, type) => {
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="mailto:ailie.mccorkindale@gmail.com">
+          <Link href="/contact">
           <a onClick={(e) => handleClick(e, "link")}>Contact</a>
           </Link>
         </li>
