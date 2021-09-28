@@ -10,6 +10,7 @@ const Meta = ({ title, keywords, description }) => {
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
+      <meta name="author" content="Ailie McCorkindale" />
 
       <link
         rel="apple-touch-icon"
@@ -34,7 +35,7 @@ const Meta = ({ title, keywords, description }) => {
         property="og:url"
         content="https://ailie-mccorkindale.vercel.app/"
       />
-      <meta property="og:image" content="/portfolioSS/jpg" />
+      <meta name="image" property="og:image" content="/portfolioSS.jpg" />
       <meta property="og:description" content={description} />
     </Head>
   );
@@ -43,7 +44,7 @@ const Meta = ({ title, keywords, description }) => {
 Meta.defaultProps = {
   title: "Ailie McCorkindale - Portfolio",
   keywords: "web development, programming, portfolio",
-  description: "Web development portfolio created by Ailie McCorkindale",
+  description: "Web development portfolio created by Ailie McCorkindale using Next.js, React, HTML, CSS and JavaScript.",
 };
 
 export default Meta;
