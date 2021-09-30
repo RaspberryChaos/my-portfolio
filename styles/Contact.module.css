@@ -17,7 +17,8 @@
 }
 
 .icon {
-  font-size: 2rem;
+  padding: 0.5rem;
+  width: 50px;
 }
 
 .contact {
@@ -26,7 +27,7 @@
   background-color: #fff;
   color: var(--clr-background);
   border: 5px solid var(--clr-yellow);
-  padding: 1rem;
+  padding: 0.5rem;
   align-items: center;
   margin: 1rem;
   width: 90%;
@@ -34,12 +35,22 @@
 
 /*MEDIA QUERIES*/
 
+/*Extra Small, Mobile*/
+@media (min-width: 500px) {
+  .icon {
+    padding: 0;
+  }
+  .contact {
+    width: 80%;
+  }
+}
+
 /* Small Devices, Tablets */
 @media (min-width: 768px) {
   .contact {
     flex-direction: row;
     justify-content: center;
-    width: 55%;
+    width: 60%;
   }
   .link {
     font-size: 1.25rem;
