@@ -107,4 +107,13 @@ export const myProjects = [
     tags: ["HTML", "CSS", "JavaScript"],
     img: "/bubblePop1.jpg",
   },
+  {
+    title: "Fake Shop",
+    id: 10,
+    url: "https://fake-shop-ailie.netlify.app/",
+    gitHub: "https://github.com/RaspberryChaos/fake-shop",
+    category: "Mini Project",
+    tags: ["React", "Redux", "HTML", "CSS", "JavaScript", "Bootstrap", "API"],
+    img: "/fakeShop.jpg",
+  },
 ];
