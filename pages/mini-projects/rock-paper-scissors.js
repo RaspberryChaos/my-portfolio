@@ -90,7 +90,7 @@ const RockPaperScissors = () => {
             </div>
             
             <div className={styles.choiceDiv}>
-              <p>Computer's Choice:</p>
+              <p>Computer&apos;s Choice:</p>
               <RPSobject title={player2} />
             </div>
           
