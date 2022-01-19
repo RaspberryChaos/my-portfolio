@@ -9,8 +9,17 @@ export const myProjects = [
     img: "/siteVP1.jpg",
   },
   {
-    title: "Trivia Game",
+    title: "Christmas Memory Game",
     id: 2,
+    url: "https://christmas-memory-game.vercel.app/",
+    gitHub: "https://github.com/RaspberryChaos/christmas-memory-game",
+    category: "React Game",
+    tags: ["React", "Next.js", "TypeScript", "JavaScript", "CSS", "HTML"],
+    img: "/christmasMemory.jpg",
+  },
+  {
+    title: "Trivia Game",
+    id: 3,
     url: "https://trivia-app-ailie.vercel.app/",
     gitHub: "https://github.com/RaspberryChaos/trivia-app",
     category: "React Game",
@@ -27,7 +36,7 @@ export const myProjects = [
   },
   {
     title: "Whale Of Fortune",
-    id: 3,
+    id: 4,
     url: "https://raspberrychaos.github.io/game-project/",
     gitHub: "https://github.com/RaspberryChaos/game-project",
     category: "Ironhack student project",
@@ -36,7 +45,7 @@ export const myProjects = [
   },
   {
     title: "My Life Timeline",
-    id: 4,
+    id: 5,
     url: "http://my-timeline-project.herokuapp.com/",
     gitHub: "https://github.com/KiwiMantelli/my-timeline-project2",
     category: "Ironhack student project",
@@ -54,7 +63,7 @@ export const myProjects = [
   },
   {
     title: "Breakroom 248",
-    id: 5,
+    id: 6,
     url: "http://breakroom-248.herokuapp.com/",
     gitHub: "https://github.com/tatimatz/breakroom248client/tree/master",
     category: "Ironhack student project",
@@ -73,7 +82,7 @@ export const myProjects = [
   },
   {
     title: "Currency Converter",
-    id: 6,
+    id: 7,
     url: "https://ailie-mccorkindale.vercel.app/mini-projects/currency-converter",
     gitHub: "https://github.com/RaspberryChaos/my-portfolio/blob/main/pages/mini-projects/currency-converter.js",
     category: "Mini Project",
@@ -82,7 +91,7 @@ export const myProjects = [
   },
   {
     title: "Rock Paper Scissors",
-    id: 7,
+    id: 8,
     url: "https://ailie-mccorkindale.vercel.app/mini-projects/rock-paper-scissors",
     gitHub: "https://github.com/RaspberryChaos/my-portfolio/blob/main/pages/mini-projects/rock-paper-scissors.js",
     category: "Mini Project",
@@ -91,7 +100,7 @@ export const myProjects = [
   },
   {
     title: "Calculator",
-    id: 8,
+    id: 9,
     url: "https://ailie-mccorkindale.vercel.app/mini-projects/calculator",
     gitHub: "https://github.com/RaspberryChaos/my-portfolio/blob/main/pages/mini-projects/calculator.js",
     category: "Mini Project",
@@ -100,7 +109,7 @@ export const myProjects = [
   },
   {
     title: "Flappy Bird",
-    id: 9,
+    id: 10,
     url: "https://flappybird-ailie.netlify.app/",
     gitHub: "https://github.com/RaspberryChaos/flappy-bird",
     category: "HTML Canvas Game",
@@ -109,7 +118,7 @@ export const myProjects = [
   },
   {
     title: "Bubble Pop",
-    id: 10,
+    id: 11,
     url: "https://bubblepop-ailie.netlify.app/",
     gitHub: "https://github.com/RaspberryChaos/bubblePop",
     category: "HTML Canvas Game",
@@ -118,7 +127,7 @@ export const myProjects = [
   },
   {
     title: "Fake Shop",
-    id: 11,
+    id: 12,
     url: "https://fake-shop-ailie.netlify.app/",
     gitHub: "https://github.com/RaspberryChaos/fake-shop",
     category: "Mini Project",
